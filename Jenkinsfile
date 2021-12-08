@@ -9,6 +9,9 @@ pipeline {
     stage("test") {
       steps {
         echo 'testing the app...'
+        script {
+          var test = 2+2>3 ? 'Correct' : 'Not Correct'
+          echo test
       }
     }
     stage("deploy") {
