@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'testing the app...'
         script {
-          def test = 2+2>3 ? 'Correct' : 'Not Correct'
+          def test = 2+2>5 ? 'Correct' : 'Not Correct'
           echo test
         }
       }
